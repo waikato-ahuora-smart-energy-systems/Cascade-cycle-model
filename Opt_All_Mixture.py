@@ -113,7 +113,7 @@ def opt_all_mixture():
             MEDIUM_BOT.update(CP.PT_INPUTS, 101325, 300)
             T_crit_bot = MEDIUM_BOT.T_critical() - 273.15 # oC
             #bounds = asarray([(0, 20), (0, 50), (100, T_crit_bot -3),(0,0.5)])
-            bounds = asarray([(0, 20), (0, 15), (100, T_crit_bot -3),(0,0.7)])
+            bounds = asarray([(0, 20), (0, 50), (100, T_crit_bot -3),(0,0.5)])
             # define lower and upper bounds for every dimension
 
             print(k, ' top cycle refrigerant:', medium_top)
